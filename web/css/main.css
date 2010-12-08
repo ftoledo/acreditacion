@@ -1,0 +1,11 @@
+#sf_admin_container ul li.sf_admin_action_android a {
+  background-image: url(../images/android.png);
+}
+
+#sf_admin_container ul li.sf_admin_action_moodle a {
+  background-image: url(../images/moodle.png);
+}
+
+#sf_admin_container ul li.sf_admin_action_install a {
+  background-image: url(../images/install.png);
+}

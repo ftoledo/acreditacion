@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Registro
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Registro
+    plural:                Registros
+    route_prefix:          registro
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+        certificado: {label: Imp. Certificado?}
+        
+      list:    
+        title: Listado personas registradas
+        display: [=id,=email,=apellido,nombre,localidad,empresa]
+        object_actions:
+          _edit: ~
+          asistencia:
+          android: { icon: android.png }
+          moodle:
+          install:
+      filter:  ~
+      form:    
+      edit:
+        title: Modificar registro
+        display:
+          "Datos personales": [email,apellido,nombre,edad,sexo,localidad,provincia,pais,empresa]
+          "Asistencia y certificado": [asistencia,certificado]
+          "Talleres": [taller_android,taller_moodle,install_fest]
+      new:     
+        title: Nuevo registro
+        display: 
+          "Datos personales": [email,apellido,nombre,edad,sexo,localidad,provincia,pais,empresa]
+          "Asistencia y certificado": [asistencia,certificado]
+          "Talleres": [taller_android,taller_moodle,install_fest]

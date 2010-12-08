@@ -1,0 +1,51 @@
+Registro:
+  tableName: registro
+  columns:
+    id: 
+      type: integer
+      primary: true
+      autoincrement: true
+    serial:
+      type: integer
+    sid:
+      type: integer
+    fecha:
+      type: timestamp
+    ip:
+      type: string(16)
+    uid:
+      type: string(200)
+    usuario:
+      type: string(200)
+    email:
+      type: string(200)
+    apellido:
+      type: string(200)
+    nombre:
+      type: string(200)
+    edad:
+      type: integer
+    sexo:
+      type: string(1)
+    localidad:
+      type: string(200)
+    provincia:
+      type: string(200)
+    pais:
+      type: string(200)
+    empresa:
+      type: string(200)
+    sitio:
+      type: string(200)
+    asistencia:
+      type: boolean
+    taller_android:
+      type: boolean
+    taller_moodle:
+      type: boolean
+    install_fest:
+      type: boolean
+    certificado:
+      type: boolean
+      
+   
