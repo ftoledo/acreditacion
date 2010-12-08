@@ -11,6 +11,7 @@
   <li ><?php echo link_to("Inicio", "@homepage")?></li>
   <li ><a href="#">Utiles</a>
     <ul>
+      <li><?php echo link_to("Estadisticas","stats/index")?></li>
       <li><?php echo link_to("Load CSV","load/index")?></li>
     </ul>
   </li>
