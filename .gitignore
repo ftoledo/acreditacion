@@ -4,3 +4,4 @@ log/*
 !log/ignore
 config/databases.yml
 web/.htaccess
+nbproject
