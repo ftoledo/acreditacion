@@ -22,4 +22,9 @@ class Registro extends BaseRegistro
     }
           
   }
+  public function __toString()
+  {
+    return ($this->apellido . ", " . $this->nombre);
+  }
+  
 }
